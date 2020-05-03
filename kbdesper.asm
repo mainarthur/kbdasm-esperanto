@@ -155,12 +155,12 @@ modifiers_max = $ - .start - 1
 palign
 
 vk2wchar1_3:
-    vkrow4 "U"          , CAPLOK + CAPLOKALTGR           , "u" , "U" , "ŭ" , "Ŭ"
     dw 0, 0, 3 dup 0
 
 palign
 
 vk2wchar2_4:
+    vkrow4 "U"          , CAPLOK + CAPLOKALTGR           , "u" , "U" , "ŭ" , "Ŭ"
     vkrow4 "S"          , CAPLOK + CAPLOKALTGR          , "s" , "S" , "ŝ" , "Ŝ"   
     vkrow4 "C"          , CAPLOK + CAPLOKALTGR          , "c" , "C" , "ĉ" , "Ĉ"  
 	vkrow4 "J"          ,  CAPLOK + CAPLOKALTGR         , "j" , "J" , "ĵ" , "Ĵ"
