@@ -6,7 +6,7 @@ set dest=%~nx1
 set target=kbdesper.dll
 set dest=kbdesper.dll
 set lid=00d0
-set id=00000417
+set id=07430419
 set shortname="Esperanto"
 set longname="Esperanto (Custom)"
 
