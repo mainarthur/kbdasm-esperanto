@@ -166,7 +166,6 @@ vk2wchar2_4:
 	vkrow4 "J"          ,  CAPLOK + CAPLOKALTGR         , "j" , "J" , "ĵ" , "Ĵ"
 	vkrow4 "H"          , CAPLOK + CAPLOKALTGR          , "h" , "H" , "ĥ" , "Ĥ"
 	vkrow4 "G"          , CAPLOK + CAPLOKALTGR          , "g" , "G" , "ĝ" , "Ĝ"
-	vkrow4 "U"          , CAPLOK + CAPLOKALTGR          , "u" , "U" , "ŭ" , "Ŭ"
     dw 0, 0, 4 dup 0
 
 palign
