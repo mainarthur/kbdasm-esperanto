@@ -7,7 +7,7 @@ set target=kbdesper.dll
 set dest=kbdesper.dll
 set lid=00d0
 set id=07430419
-set shortname="ESPER"
+set shortname="Esperanto"
 set longname="Esperanto (Custom)"
 
 if not exist %target% goto:notexist
@@ -35,7 +35,7 @@ set key="HKLM\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\%id%"
 reg add %key% /f >nul 2>&1
 if errorlevel 1 goto:cannotreg
 reg add %key% /f /v "Layout Text" /t REG_SZ /d %shortname% >nul 2>&1
-reg add %key% /f /v "Layout Display Name" /t REG_SZ /d %longname% >nul 2>&1
+reg add %key% /f /v "Layout Display Name" /t REG_EXPAND_SZ /d %longname% >nul 2>&1
 reg add %key% /f /v "Layout File" /t REG_SZ /d "%dest%" >nul 2>&1
 reg add %key% /f /v "Layout Id" /t REG_SZ /d %lid% >nul 2>&1
 if errorlevel 1 goto:cannotreg
