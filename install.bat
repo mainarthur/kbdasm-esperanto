@@ -3,23 +3,13 @@ if not "%cd%"\=="%~pd0" cd /d "%~pd0"
 set target=%1
 set dest=%~nx1
 
-if "%target%"=="" (
-  set target=kbdusru_undead.dll
-  set dest=kbdusru_undead.dll
-  set lid=00d0
-  set id=07430419
-  set shortname="US+RU"
-  set longname="United States-International + Russian + Extra"
-) else (
-  set id=07430409
-  if not "%2"=="" set id=%2
-  set lid=00d1
-  if not "%3"=="" set lid=%3
-  set shortname="US+"
-  if not "%~4"=="" set shortname=%4
-  set longname="United States-Custom"
-  if not "%~5"=="" set longname=%5
-)
+set target=kbdesper.dll
+set dest=kbdesper.dll
+set lid=00d0
+set id=07430419
+set shortname="ESPER"
+set longname="Esperanto (Custom)"
+
 if not exist %target% goto:notexist
 if exist %windir%\system32\%dest% goto:alreadyexist
 if exist %windir%\sysnative\cmd.exe goto:relaunch64
@@ -30,7 +20,7 @@ if not %errorlevel%==0 goto:notadmin
 echo Checking keyboard layout IDs, please wait...
 call checklid %lid%
 if errorlevel 1 goto:eof
-set /p answer="Do you want to install %target% in your system? [Y/N] "
+set /p answer="Do you want to install esperanto keyboard layout in your system? [Y/N] "
 if "%answer%"=="" goto:no
 if /I "%answer:~0,1%"=="y" goto:yes
 :no
@@ -51,7 +41,7 @@ reg add %key% /f /v "Layout Id" /t REG_SZ /d %lid% >nul 2>&1
 if errorlevel 1 goto:cannotreg
 if not x%nt5%==xyes reg_layout r 0x%id:~4,4%:0x%id%
 if errorlevel 1 goto:cannotreg2
-echo The job is done. Now you should have additional layout called %longname%
+echo The job is done! Now you should have additional layout called %longname%
 goto:eof
 :manualreg
 echo REGEDIT4>>_install.reg
