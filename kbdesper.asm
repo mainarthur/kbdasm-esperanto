@@ -166,6 +166,7 @@ vk2wchar2_4:
 	vkrow4 "J"          ,  CAPLOK + CAPLOKALTGR         , "j" , "J" , "ĵ" , "Ĵ"
 	vkrow4 "H"          , CAPLOK + CAPLOKALTGR          , "h" , "H" , "ĥ" , "Ĥ"
 	vkrow4 "G"          , CAPLOK + CAPLOKALTGR          , "g" , "G" , "ĝ" , "Ĝ"
+	vkrow4 "U"          , CAPLOK + CAPLOKALTGR          , "u" , "U" , "ŭ" , "Ŭ"
     dw 0, 0, 4 dup 0
 
 palign
@@ -471,7 +472,7 @@ deadkeys:
 palign
 
 data export
-export "KBDPL1_new.dll", KbdLayerDescriptor, "KbdLayerDescriptor"
+export "kbdesper.dll", KbdLayerDescriptor, "KbdLayerDescriptor"
 end data
 
 palign
@@ -494,13 +495,13 @@ section ".rsrc" data readable resource
 directory RT_VERSION,versions
 resource versions,1,LANG_NEUTRAL,version
 versioninfo version,VOS_NT_WINDOWS32,VFT_DLL,VFT2_DRV_KEYBOARD,0,1200,\
-    "CompanyName","Microsoft Corporation",\
-    "FileDescription","Polish Programmer's Keyboard Layout",\
-    "FileVersion","10.0.17763.1 (WinBuild.160101.0800)",\
+    "CompanyName","User",\
+    "FileDescription","Esperanto Keyboard Layout",\
+    "FileVersion","1.0.0.0 (WinBuild.160101.0800)",\
     "InternalName","kbdpl1 (3.13)",\
-    "LegalCopyright","© Microsoft Corporation. All rights reserved.",\
-    "OriginalFilename","kbdpl1.dll",\
-    "ProductName","Microsoft® Windows® Operating System",\
-    "ProductVersion","10.0.17763.1"
+    "LegalCopyright","user",\
+    "OriginalFilename","kbdesper.dll",\
+    "ProductName","user",\
+    "ProductVersion","1.0.0.0"
 
 section ".reloc" data readable discardable fixups
