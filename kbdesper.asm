@@ -155,19 +155,19 @@ modifiers_max = $ - .start - 1
 palign
 
 vk2wchar1_3:
+    vkrow4 "U"          , CAPLOK + CAPLOKALTGR           , "u" , "U" , "ŭ" , "Ŭ"
     dw 0, 0, 3 dup 0
 
 palign
 
 vk2wchar2_4:
-    vkrow4 "U"          , CAPLOK + CAPLOKALTGR           , "u" , "U" , "ŭ" , "Ŭ"
     vkrow4 "S"          , CAPLOK + CAPLOKALTGR          , "s" , "S" , "ŝ" , "Ŝ"   
     vkrow4 "C"          , CAPLOK + CAPLOKALTGR          , "c" , "C" , "ĉ" , "Ĉ"  
 	vkrow4 "J"          ,  CAPLOK + CAPLOKALTGR         , "j" , "J" , "ĵ" , "Ĵ"
 	vkrow4 "H"          , CAPLOK + CAPLOKALTGR          , "h" , "H" , "ĥ" , "Ĥ"
 	vkrow4 "G"          , CAPLOK + CAPLOKALTGR          , "g" , "G" , "ĝ" , "Ĝ"
     dw 0, 0, 4 dup 0
-
+    
 palign
 
 vk2wchar3_5:
@@ -464,7 +464,7 @@ deadkeys:
     du "Z~Ż", 0
     du "X~Ź", 0
     du "C~Ć", 0
-    du "N~Ń", 0
+    du "U~Ŭ", 0
     du " ~~", 0
     dw 4 dup 0
 
