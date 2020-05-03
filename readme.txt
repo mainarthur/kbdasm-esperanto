@@ -16,8 +16,3 @@ Fork from: https://github.com/grompe/kbdasm
 flat assembler Copyright (c) 1999-2013, Tomasz Grysztar.
 http://flatassembler.net/
 
-Keyboard images generated with keyboard-layout-editor by Ian Prest.
-http://keyboard-layout-editor.com/
-https://github.com/ijprest/keyboard-layout-editor
-
-The rest is public domain.
