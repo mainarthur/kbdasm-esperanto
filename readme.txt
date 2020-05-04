@@ -8,7 +8,7 @@ Instalation:
 2. >install.bat
 3. >open_control_input.bat
 4. Set the new keyboard layout
-5. Restart programs you're typing in
+5. Restart your pc
 
 
 Fork from: https://github.com/grompe/kbdasm
