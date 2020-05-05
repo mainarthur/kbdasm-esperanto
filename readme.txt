@@ -10,7 +10,6 @@ Instalation:
 4. Set the new keyboard layout
 5. Restart your pc
 
-
 Fork from: https://github.com/grompe/kbdasm
 
 flat assembler Copyright (c) 1999-2013, Tomasz Grysztar.
